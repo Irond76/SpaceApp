@@ -21,9 +21,22 @@ const Nasa = () => {
     getSpacePics();
   }, [])
   return (
-    <div>
-        <h1>Nasa Component</h1>
-    </div>
+    <>
+    {
+      spacePics.map((item) => {
+        const {date, copyright,explanation, hdurl, title, url} = item;
+        return (
+          <div>
+            <h2>{title}</h2>
+            <h3>Photo Credit: {copyright}</h3>
+            <p>{date}</p>
+            <p>{explanation}</p>
+            <img src={url} alt="random nasa space images" />
+          </div>
+        )
+      })
+    }
+    </>
   )
 }
 

@@ -42,3 +42,17 @@
 .image {
     width: 500px;
 }
+.image-btn {
+    color: #bbeeff;
+    box-shadow: 1px 1px 10px 1px rgba(187, 238, 255, 0.7);
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: #5588ff;
+    margin-top: -15rem;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.image-btn:hover {
+    transform: scale(1.1);
+    background-color: #77aaff;
+}

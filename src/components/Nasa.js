@@ -38,6 +38,7 @@ const Nasa = () => {
         )
       })
     }
+    <button className='image-btn'>Refresh Images</button>
     </>
   )
 }

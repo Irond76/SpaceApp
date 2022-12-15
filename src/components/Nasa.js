@@ -19,7 +19,11 @@ const Nasa = () => {
 //  calling the api
   useEffect(()=> {
     getSpacePics();
-  }, [])
+  }, []);
+
+  const refreshPageButton = () => {
+    window.location.reload();
+  }
   return (
     <>
     {
@@ -38,9 +42,9 @@ const Nasa = () => {
         )
       })
     }
-    <button className='image-btn'>Refresh Images</button>
+    <button className='image-btn'type='button'onClick={refreshPageButton}>Refresh Images</button>
     </>
   )
 }
 
-export default Nasa
+export default Nasa;

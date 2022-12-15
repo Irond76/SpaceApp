@@ -1,5 +1,5 @@
 import Nasa from './components/Nasa';
-import './App.css';
+import '../src/styles/nasa.css'
 
 function App() {
   return (

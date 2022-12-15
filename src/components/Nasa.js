@@ -26,12 +26,14 @@ const Nasa = () => {
       spacePics.map((item) => {
         const {date, copyright,explanation, hdurl, title, url} = item;
         return (
-          <div>
-            <h2>{title}</h2>
-            <h3>Photo Credit: {copyright}</h3>
-            <p>{date}</p>
-            <p>{explanation}</p>
-            <img src={url} alt="random nasa space images" />
+          <div className='container'key={hdurl}>
+              <div className='card'>
+                  <div><h2 className='title'>{title}</h2></div>
+                  <div><h3 className='author'>Photo Credit: {copyright}</h3></div>
+                  <div><p className='date'>{date}</p></div>
+                  <div><p className='text'>{explanation}</p></div>
+                  <div><img src={url} alt="random nasa space images" className='image'/></div>
+              </div>
           </div>
         )
       })
